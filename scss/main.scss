@@ -9,9 +9,12 @@
 //     width: 100%;
 //     height: 100%;
 // }
+$main-color: #61422b;
+$font-color: #e5d7e1;
 
 .header {
-    background-color: rgb(255, 18, 18);
+    background-color: $main-color;
+    color: $font-color;
     position: fixed;
     height: 80px;
     width: 100%;
@@ -34,5 +37,17 @@
     section {
         height: 100vh;
         background-color: rgb(125, 58, 58);
+    }
+}
+
+.footer {
+    background-color: rgb(22, 202, 22);
+    display: flex;
+    justify-content: center;
+
+    .social {
+        img {
+            width: 20px;
+        }
     }
 }
