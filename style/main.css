@@ -1,3 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 * {
   border: 1px solid black;
+}
+
+.header {
+  background-color: rgb(255, 18, 18);
+  position: fixed;
+  height: 80px;
+  width: 100%;
+}
+.header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  background-color: rgb(185, 74, 74);
+  margin: 0 auto;
+}
+
+.content section {
+  height: 100vh;
+  background-color: rgb(125, 58, 58);
 }/*# sourceMappingURL=main.css.map */

@@ -1,1 +1,1 @@
-*{border:1px solid #000}/*# sourceMappingURL=main.min.css.map */
+*,*::after,*::before{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}*{border:1px solid #000}.header{background-color:#ff1212;position:fixed;height:80px;width:100%}.header ul{list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex}.header .wraper{display:-webkit-box;display:-ms-flexbox;display:flex;width:80%;background-color:#b94a4a;margin:0 auto}.content section{height:100vh;background-color:#7d3a3a}/*# sourceMappingURL=main.min.css.map */
