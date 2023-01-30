@@ -27,6 +27,9 @@ body {
 .header li {
   padding: 0 10px;
 }
+.header li:hover {
+  background-color: #000;
+}
 .header ul {
   list-style: none;
   display: -webkit-box;
@@ -48,8 +51,29 @@ body {
 .content {
   text-align: center;
 }
+.content .index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .index a {
+  display: block;
+  background-color: #e5d7e1;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+  text-decoration: none;
+}
 .content section {
   height: 100vh;
+  width: 80%;
+  margin: 0 auto;
   background-color: rgb(125, 58, 58);
 }
 
@@ -63,5 +87,8 @@ body {
           justify-content: center;
 }
 .footer .social img {
-  width: 20px;
+  width: 40px;
+}
+.footer .social a:hover {
+  color: black;
 }/*# sourceMappingURL=main.css.map */
