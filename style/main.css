@@ -11,7 +11,8 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: Noto Sans Traditional Chinese;
+  font-weight: bolder;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .header {
@@ -51,9 +52,6 @@ body {
   font-size: 20px;
 }
 
-.content {
-  text-align: center;
-}
 .content .index {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,19 +63,27 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.content .index .wrapper img {
+  width: 500px;
+}
 .content .index a {
   display: block;
-  background-color: #FFFFFF;
+  background-color: #4E9AE4;
+  color: #FFFFFF;
   height: 50px;
   line-height: 50px;
   border-radius: 10px;
   text-decoration: none;
+  text-align: center;
+}
+.content .index a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .content section {
   height: 100vh;
   width: 80%;
   margin: 0 auto;
-  background-color: rgb(125, 58, 58);
 }
 
 .footer {
@@ -85,13 +91,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .footer .social img {
   width: 40px;
-}
-.footer .social a:hover {
-  color: black;
 }/*# sourceMappingURL=main.css.map */
