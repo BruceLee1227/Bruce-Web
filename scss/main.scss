@@ -60,12 +60,19 @@ $font-color: #FFFFFF;
 
     .index {
         display: flex;
-        justify-content: flex-start;
         align-items: center;
+        justify-content: space-between;
 
-        .wrapper {
-            img {
-                width: 500px;
+        .index-text {
+
+            h1 {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 36px;
+                margin-bottom: 20px;
             }
         }
 
@@ -96,7 +103,7 @@ $font-color: #FFFFFF;
 }
 
 .footer {
-    background-color: rgb(22, 202, 22);
+    background-color: $main-color;
     display: flex;
     justify-content: space-around;
 
