@@ -52,6 +52,10 @@ body {
   font-size: 20px;
 }
 
+.content {
+  background: rgb(78, 154, 228);
+  background: linear-gradient(135deg, rgb(78, 154, 228) 10%, rgb(255, 255, 255) 10%);
+}
 .content .index {
   display: -webkit-box;
   display: -ms-flexbox;

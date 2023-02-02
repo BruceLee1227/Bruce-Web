@@ -57,11 +57,14 @@ $font-color: #FFFFFF;
 }
 
 .content {
+    background: rgb(78, 154, 228);
+    background: linear-gradient(135deg, rgba(78, 154, 228, 1) 10%, rgba(255, 255, 255, 1) 10%);
 
     .index {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
 
         .index-text {
 
