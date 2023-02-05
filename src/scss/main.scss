@@ -106,7 +106,8 @@ $font-color: #FFFFFF;
 }
 
 .footer {
-    background-color: $main-color;
+    background: rgb(78, 154, 228);
+    background: linear-gradient(135deg, rgba(78, 154, 228, 1) 10%, rgba(255, 255, 255, 1) 10%);
     display: flex;
     justify-content: space-around;
 
