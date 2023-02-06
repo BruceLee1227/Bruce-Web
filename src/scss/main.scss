@@ -1,8 +1,7 @@
 @import 'rest';
 
 // * {
-//     // border: 1px solid black;
-//     // font-family: "微軟正黑體";
+//     border: 1px solid black;
 // }
 
 html,
@@ -17,6 +16,7 @@ body {
 $main-color: #4E9AE4;
 $font-color: #FFFFFF;
 
+// 導覽列
 .header {
     background-color: $main-color;
     color: $font-color;
@@ -56,15 +56,17 @@ $font-color: #FFFFFF;
 
 }
 
+// 內容
 .content {
     background: rgb(78, 154, 228);
     background: linear-gradient(135deg, rgba(78, 154, 228, 1) 10%, rgba(255, 255, 255, 1) 10%);
+    width: 80%;
+    margin: 0 auto;
 
     .index {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
 
         .index-text {
 
@@ -95,16 +97,37 @@ $font-color: #FFFFFF;
         }
     }
 
-    section {
-        height: 100vh;
-        width: 80%;
-        margin: 0 auto;
-        // background-color: rgb(125, 58, 58);
+    .about {
+        display: flex;
+        justify-content: space-between;
+
+        .about-text {
+            width: 50%;
+            display: flex;
+
+            // 垂直分隔線
+            &::after {
+                content: "";
+                margin-left: 150px;
+                padding-right: 15px;
+                border-right: 2px solid rgb(246, 42, 42);
+                height: 100%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        .about-img {
+            img {
+                width: 100%;
+                border-radius: 50%;
+                border: 1px solid black;
+            }
+        }
     }
-
-
 }
 
+// 頁尾
 .footer {
     background: rgb(78, 154, 228);
     background: linear-gradient(135deg, rgba(78, 154, 228, 1) 10%, rgba(255, 255, 255, 1) 10%);

@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
@@ -34,12 +35,18 @@ body {
 }
 .header ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .header .wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 80%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: inherit;
   margin: 0 auto;
   font-size: 20px;
@@ -48,11 +55,19 @@ body {
 .content {
   background: rgb(78, 154, 228);
   background: linear-gradient(135deg, rgb(78, 154, 228) 10%, rgb(255, 255, 255) 10%);
+  width: 80%;
+  margin: 0 auto;
 }
 .content .index {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .content .index .index-text h1 {
   font-size: 48px;
@@ -73,19 +88,46 @@ body {
   text-align: center;
 }
 .content .index a:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
-.content section {
-  height: 100vh;
-  width: 80%;
-  margin: 0 auto;
+.content .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content .about .about-text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.content .about .about-text::after {
+  content: "";
+  margin-left: 150px;
+  padding-right: 15px;
+  border-right: 2px solid rgb(246, 42, 42);
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.content .about .about-img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 
 .footer {
   background: rgb(78, 154, 228);
   background: linear-gradient(135deg, rgb(78, 154, 228) 10%, rgb(255, 255, 255) 10%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .footer .social img {
   width: 40px;
