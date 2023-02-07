@@ -99,17 +99,14 @@ $font-color: #FFFFFF;
 
     .about {
         display: flex;
-        justify-content: space-between;
-
+       
         .about-text {
+            // 垂直分隔線
             width: 50%;
             display: flex;
-
-            // 垂直分隔線
+            flex-wrap: wrap;
             &::after {
                 content: "";
-                margin-left: 150px;
-                padding-right: 15px;
                 border-right: 2px solid rgb(246, 42, 42);
                 height: 100%;
                 display: inline-block;
@@ -118,11 +115,11 @@ $font-color: #FFFFFF;
         }
 
         .about-img {
-            img {
-                width: 100%;
-                border-radius: 50%;
-                border: 1px solid black;
-            }
+            // background-image: url("/dist/img/20230205.jpg");
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 50%;
+            overflow: hidden;
         }
     }
 }
