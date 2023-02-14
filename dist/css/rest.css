@@ -4,4 +4,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}/*# sourceMappingURL=rest.css.map */
+}
+
+.container {
+  max-width: 1000px;
+  height: 100%;
+  padding: 0 30px;
+  position: relative;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
