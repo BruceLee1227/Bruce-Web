@@ -30,7 +30,7 @@ a {
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: 1000vh;
   font-weight: bolder;
   font-family: "Noto Sans TC", sans-serif;
 }
@@ -38,7 +38,9 @@ body {
 .header {
   width: 100%;
   height: 80px;
+  position: fixed;
   background-color: #4E9AE4;
+  color: #FFFFFF;
 }
 .header .header-content {
   height: 100%;
@@ -107,12 +109,6 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
-.content .about .about-img {
-  width: 100px;
-  border: 1px solid black;
-  border-radius: 50%;
-  overflow: hidden;
-}
 
 .footer {
   background: rgb(78, 154, 228);
@@ -122,4 +118,4 @@ body {
 }
 .footer .social img {
   width: 40px;
-}
+}/*# sourceMappingURL=main.css.map */
