@@ -64,50 +64,15 @@ body {
   color: #e48912;
 }
 
-.content {
-  background: rgb(78, 154, 228);
-  background: linear-gradient(135deg, rgb(78, 154, 228) 10%, rgb(255, 255, 255) 10%);
+.index .index-content {
+  display: flex;
+  align-items: center;
   min-height: 100vh;
 }
-.content .index {
+.index .index-content .content-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.content .index .index-text h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-.content .index .index-text p {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-.content .index a {
-  display: block;
-  background-color: #4E9AE4;
-  color: #FFFFFF;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 10px;
-  text-align: center;
-}
-.content .index a:hover {
-  transform: scale(1.2);
-}
-.content .about {
-  display: flex;
-}
-.content .about .about-text {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.content .about .about-text::after {
-  content: "";
-  border-right: 2px solid rgb(246, 42, 42);
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .footer {
@@ -118,4 +83,4 @@ body {
 }
 .footer .social img {
   width: 40px;
-}/*# sourceMappingURL=main.css.map */
+}

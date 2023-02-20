@@ -47,59 +47,16 @@ $font-color: #FFFFFF;
     }
 }
 
-// 內容
-.content {
-    background: rgb(78, 154, 228);
-    background: linear-gradient(135deg, rgba(78, 154, 228, 1) 10%, rgba(255, 255, 255, 1) 10%);
-    min-height: 100vh;
-    .index {
+// 首頁
+.index{
+    .index-content{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-
-        .index-text {
-
-            h1 {
-                font-size: 48px;
-                margin-bottom: 20px;
-            }
-
-            p {
-                font-size: 36px;
-                margin-bottom: 20px;
-            }
-        }
-
-        a {
-            display: block;
-            background-color: $main-color;
-            color: $font-color;
-            height: 50px;
-            line-height: 50px;
-            border-radius: 10px;
-            text-align: center;
-
-            &:hover {
-                transform: scale(1.2);
-            }
-        }
-    }
-
-    .about {
-        display: flex;
-       
-        .about-text {
-            // 垂直分隔線
-            width: 50%;
+        min-height: 100vh;
+        .content-wrap{
             display: flex;
-            flex-wrap: wrap;
-            &::after {
-                content: "";
-                border-right: 2px solid rgb(246, 42, 42);
-                height: 100%;
-                display: inline-block;
-                vertical-align: middle;
-            }
+            align-items: center;
+            justify-content: space-between;
         }
     }
 }
