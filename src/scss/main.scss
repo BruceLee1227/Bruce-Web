@@ -51,12 +51,42 @@ $font-color: #FFFFFF;
 .index{
     .index-content{
         display: flex;
+        justify-content: space-around;
         align-items: center;
         min-height: 100vh;
         .content-wrap{
             display: flex;
             align-items: center;
+            justify-content: space-around;
+        }
+    }
+    .index-img{
+        img{
+            width: 80%;
+        }
+        ul{
+            display: flex;
             justify-content: space-between;
+            li{
+                background-color: black;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+        }
+        >div{
+            text-align: center;
+        }
+    }
+    .index-text{
+        width: 50%;
+        a{
+            display: block;
+            padding: 10px;
+            background-color: $main-color;
+            color: $font-color;
+            border-radius: 20px;
+            text-align: center;
         }
     }
 }

@@ -66,13 +66,41 @@ body {
 
 .index .index-content {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   min-height: 100vh;
 }
 .index .index-content .content-wrap {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+.index .index-img img {
+  width: 80%;
+}
+.index .index-img ul {
+  display: flex;
   justify-content: space-between;
+}
+.index .index-img ul li {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.index .index-img > div {
+  text-align: center;
+}
+.index .index-text {
+  width: 50%;
+}
+.index .index-text a {
+  display: block;
+  padding: 10px;
+  background-color: #4E9AE4;
+  color: #FFFFFF;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .footer {
