@@ -64,6 +64,10 @@ body {
   color: #e48912;
 }
 
+.index {
+  min-height: 100vh;
+  background-color: green;
+}
 .index .index-content {
   display: flex;
   justify-content: space-around;
@@ -80,7 +84,6 @@ body {
 }
 .index .index-img ul {
   display: flex;
-  justify-content: space-between;
 }
 .index .index-img ul li {
   background-color: black;
@@ -89,6 +92,11 @@ body {
   border-radius: 50%;
 }
 .index .index-img > div {
+  text-align: center;
+  background-color: red;
+  border-radius: 80px;
+}
+.index .index-img .dot {
   text-align: center;
 }
 .index .index-text {

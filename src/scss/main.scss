@@ -49,6 +49,8 @@ $font-color: #FFFFFF;
 
 // 首頁
 .index{
+    min-height: 100vh;
+    background-color: green;
     .index-content{
         display: flex;
         justify-content: space-around;
@@ -66,7 +68,6 @@ $font-color: #FFFFFF;
         }
         ul{
             display: flex;
-            justify-content: space-between;
             li{
                 background-color: black;
                 width: 20px;
@@ -75,6 +76,11 @@ $font-color: #FFFFFF;
             }
         }
         >div{
+            text-align: center;
+            background-color:red;
+            border-radius: 80px;
+        }
+        .dot{
             text-align: center;
         }
     }
