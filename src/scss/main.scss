@@ -57,28 +57,45 @@ $font-color: #ffffff;
         align-items: center;
         min-height: 100vh;
         .content-wrap{
+            border: 1px solid black;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
     }
     .index-img{
+        background-color: #b34545;
         >div{
-            text-align: center;
+            text-align: right;
         }
         img{
             width: 80%;
         }
     }
     .index-text{
-        width: 50%;
-        .btn{
-            padding: 8px 20px;
-            background-color: $main-color;
-            color: $font-color;
-            font-weight: bolder;
-            border: 0;
-            border-radius: 20px;
+        // background-color: #2e92f7;
+        // width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .index-text-wrap{
+            margin-bottom: 20px;
+        }
+    }
+    a{  
+        display: block;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        background-color: $main-color;
+        color: $font-color;
+        &:hover{
+            transform: scale(1.5);
         }
     }
 }
