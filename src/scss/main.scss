@@ -13,8 +13,8 @@ body {
 }
 
 
-$main-color: #4E9AE4;
-$font-color: #FFFFFF;
+$main-color: #2e92f7;
+$font-color: #ffffff;
 
 // 導覽列
 .header {
@@ -50,7 +50,7 @@ $font-color: #FFFFFF;
 // 首頁
 .index{
     min-height: 100vh;
-    background-color: green;
+    // background-color: green;
     .index-content{
         display: flex;
         justify-content: space-around;
@@ -59,40 +59,26 @@ $font-color: #FFFFFF;
         .content-wrap{
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
         }
     }
     .index-img{
-        img{
-            width: 80%;
-        }
-        ul{
-            display: flex;
-            li{
-                background-color: black;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-            }
-        }
         >div{
             text-align: center;
-            background-color:red;
-            border-radius: 80px;
         }
-        .dot{
-            text-align: center;
+        img{
+            width: 80%;
         }
     }
     .index-text{
         width: 50%;
-        a{
-            display: block;
-            padding: 10px;
+        .btn{
+            padding: 8px 20px;
             background-color: $main-color;
             color: $font-color;
+            font-weight: bolder;
+            border: 0;
             border-radius: 20px;
-            text-align: center;
         }
     }
 }
