@@ -99,7 +99,16 @@ $font-color: #ffffff;
         }
     }
 }
-
+// 關於
+.about{
+    display: flex;
+    
+    .about-img{
+        background-color: #8b5d5d;
+        border: 1px soild black;
+        background-image: url(../img/20230205.jpg);
+    }
+}
 // 頁尾
 .footer {
     background: rgb(78, 154, 228);
