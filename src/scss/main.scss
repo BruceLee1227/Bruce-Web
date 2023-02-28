@@ -50,7 +50,8 @@ $font-color: #ffffff;
 // 首頁
 .index{
     min-height: 100vh;
-    // background-color: green;
+    background-color: green;
+    
     .index-content{
         display: flex;
         justify-content: space-around;
@@ -94,19 +95,39 @@ $font-color: #ffffff;
         border-radius: 50px;
         background-color: $main-color;
         color: $font-color;
+        transition: 0.5s;
         &:hover{
-            transform: scale(1.5);
+            transform: scale(1.2);
         }
     }
 }
 // 關於
 .about{
-    display: flex;
-    
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #e91c1c;
+    .about-content{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-wrap{
+        display: flex;
+        width: 100%;
+        border: 5px solid black;
+        >div{
+            width: 50%;
+        }
+    }
+    .about-text{
+        background-color: rgb(174, 79, 79);
+    }
     .about-img{
-        background-color: #8b5d5d;
-        border: 1px soild black;
         background-image: url(../img/20230205.jpg);
+        background-size: cover;
+        background-position: center center;
     }
 }
 // 頁尾
