@@ -148,6 +148,11 @@ body {
   background-position: center center;
 }
 
+.skills {
+  height: 100vh;
+  background-color: #bc8282;
+}
+
 .footer {
   background: rgb(78, 154, 228);
   background: linear-gradient(135deg, rgb(78, 154, 228) 10%, rgb(255, 255, 255) 10%);
