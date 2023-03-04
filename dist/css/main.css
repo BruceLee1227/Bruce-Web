@@ -152,6 +152,21 @@ body {
   height: 100vh;
   background-color: #bc8282;
 }
+.skills img {
+  width: 80%;
+}
+.skills ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills ul li {
+  border: 1px black solid;
+  border-radius: 5px;
+  background-color: inherit;
+  width: 50%;
+  margin-left: 20px;
+}
 
 .footer {
   background: rgb(78, 154, 228);
