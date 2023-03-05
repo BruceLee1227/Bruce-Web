@@ -27,7 +27,22 @@ a{
     height: 100%;
     margin: 0px auto;
 }
-// .tittle{
+.tittle{
 
-// }
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 20px;
+        position: relative;   
+        &::after{
+            content:"";
+            position: absolute;
+            left:calc(50% - 140px);
+            height: 3px;
+            width: 0;
+            border-left: 100px solid #5c1616;
+            border-right: 180px solid #315547;
+            bottom: -10px;
+        }
+    
+}
 

@@ -49,7 +49,7 @@ body {
 // 首頁
 .index{
     min-height: 100vh;
-    background-color: green;
+    // background-color: green;
     
     .index-content{
         display: flex;
@@ -57,14 +57,14 @@ body {
         align-items: center;
         min-height: 100vh;
         .content-wrap{
-            border: 1px solid black;
+            // border: 1px solid black;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
     }
     .index-img{
-        background-color: #b34545;
+        // background-color: #b34545;
         >div{
             text-align: right;
         }
@@ -105,7 +105,7 @@ body {
     background-image: url(../img/background.jpg);
     background-size: cover;
     background-position: center;
-    background-color: #e91c1c;
+    // background-color: #e91c1c;
     .about-content{
         min-height: 100vh;
         display: flex;
@@ -133,19 +133,25 @@ body {
 .skills{
     height: 100vh;
     background-color: #bc8282;
-    img{
-        width: 80%;
+    .skills-content{
+        display: flex;
+        align-items: center;
     }
     ul{
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
         li{
-            border: 1px black solid;
-            border-radius: 5px;
-            background-color: inherit;
-            width: 50%;
-            margin-left: 20px;
+            width: 30%;
+            padding: 10px;
+            margin-right: 20px;
+            border: 1px solid black;
+            >
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                background-color: #b85858;
+            }
         }
     }
 }
