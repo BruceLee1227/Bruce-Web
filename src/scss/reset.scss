@@ -29,10 +29,11 @@ a{
 }
 .tittle{
 
-        text-align: center;
+        
         font-size: 26px;
-        margin-bottom: 20px;
-        position: relative;   
+        margin-top: 20px;
+        position: relative; 
+        text-align: center;  
         &::after{
             content:"";
             position: absolute;

@@ -32,10 +32,10 @@ a {
 }
 
 .tittle {
-  text-align: center;
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   position: relative;
+  text-align: center;
 }
 .tittle::after {
   content: "";
@@ -46,4 +46,4 @@ a {
   border-left: 100px solid #5c1616;
   border-right: 180px solid #315547;
   bottom: -10px;
-}/*# sourceMappingURL=reset.css.map */
+}

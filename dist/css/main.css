@@ -32,10 +32,10 @@ a {
 }
 
 .tittle {
-  text-align: center;
   font-size: 26px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   position: relative;
+  text-align: center;
 }
 .tittle::after {
   content: "";
@@ -62,6 +62,7 @@ body {
   position: fixed;
   background-color: #2e92f7;
   color: #ffffff;
+  z-index: 99;
 }
 .header .header-content {
   height: 100%;
@@ -159,29 +160,9 @@ body {
   background-position: center center;
 }
 
-.skills {
-  height: 100vh;
-  background-color: #bc8282;
-}
-.skills .skills-content {
-  display: flex;
-  align-items: center;
-}
-.skills ul {
-  display: flex;
-  justify-content: center;
-}
-.skills ul li {
-  width: 30%;
-  padding: 10px;
-  margin-right: 20px;
-  border: 1px solid black;
-}
-.skills ul li:last-child {
-  margin-right: 0;
-}
-.skills ul li:hover {
-  background-color: #b85858;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .footer {
@@ -192,4 +173,4 @@ body {
 }
 .footer .social img {
   width: 40px;
-}/*# sourceMappingURL=main.css.map */
+}
