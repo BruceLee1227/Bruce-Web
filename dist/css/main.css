@@ -33,7 +33,7 @@ a {
 
 .tittle {
   font-size: 26px;
-  margin-top: 20px;
+  margin-top: 80px;
   position: relative;
   text-align: center;
 }
@@ -160,9 +160,8 @@ body {
   background-position: center center;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.profoilos img {
+  height: 350px;
 }
 
 .footer {
@@ -173,4 +172,4 @@ body {
 }
 .footer .social img {
   width: 40px;
-}
+}/*# sourceMappingURL=main.css.map */
