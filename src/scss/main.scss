@@ -20,8 +20,8 @@ body {
     width: 100%;
     height: 80px;
     position: fixed;
-    background-color: $main-color;
-    color: $font-color;
+    background-color: transparent;
+    color: $color_white;
     z-index: 99;
     .header-content{
         height: 100%;
@@ -34,6 +34,7 @@ body {
         display: flex;
         font-weight: bold;
         font-size: 20px;
+        color: $color_white;
         li{
             text-align: center;
             margin-right: 10px;
@@ -41,7 +42,7 @@ body {
                 margin-right: 0;
             }
             &:hover{
-                color: #e48912;
+                color:$color_white;
             }
         }
     }
@@ -49,23 +50,20 @@ body {
 
 // 首頁
 .index{
-    min-height: 100vh;
-    // background-color: green;
-    
+    // min-height: 100vh;
+
     .index-content{
         display: flex;
         justify-content: space-around;
         align-items: center;
         min-height: 100vh;
         .content-wrap{
-            // border: 1px solid black;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
     }
     .index-img{
-        // background-color: #b34545;
         >div{
             text-align: right;
         }
@@ -74,8 +72,6 @@ body {
         }
     }
     .index-text{
-        // background-color: #2e92f7;
-        // width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -83,19 +79,14 @@ body {
             margin-bottom: 20px;
         }
     }
-    a{  
-        display: block;
-        width: 200px;
-        height: 50px;
-        cursor: pointer;
-        padding: 5px;
+    .btn{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50px;
-        background-color: $main-color;
-        color: $font-color;
+        // background-color: blue;
+    }
+    a{  
+        cursor: pointer;
         transition: 0.5s;
+        margin-left: 20px;
         &:hover{
             transform: scale(1.2);
         }
@@ -103,10 +94,7 @@ body {
 }
 // 關於
 .about{
-    background-image: url(../img/background.jpg);
-    background-size: cover;
-    background-position: center;
-    // background-color: #e91c1c;
+
     .about-content{
         min-height: 100vh;
         display: flex;
@@ -132,10 +120,8 @@ body {
 }
 // 作品
 .profoilos{
-    // .frontend{
-    //     padding-bottom: 80px;
-    // }
-    img{
+    .img-fluid{
+        display: block;
         height: 350px;
     }
 }

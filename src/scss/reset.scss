@@ -5,10 +5,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-$main-color: #2e92f7;
-$font-color: #ffffff;
+$color_blue: #2e92f7;
+$color_white: #ffefef;
 html,body{
     scroll-behavior: smooth;
+    background-color: $color_white;
 }
 .container{
     width: 80%;
@@ -20,28 +21,9 @@ ul{
 }
 a{
     text-decoration: none;
-    color: inherit;
 }
 .container{
     width: 80%;
     height: 100%;
     margin: 0px auto;
 }
-.tittle{
-        font-size: 26px;
-        margin-top: 80px;
-        position: relative; 
-        text-align: center;  
-        &::after{
-            content:"";
-            position: absolute;
-            left:calc(50% - 140px);
-            height: 3px;
-            width: 0;
-            border-left: 100px solid #5c1616;
-            border-right: 180px solid #315547;
-            bottom: -10px;
-        }
-    
-}
-

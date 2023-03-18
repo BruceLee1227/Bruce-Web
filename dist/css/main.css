@@ -8,6 +8,7 @@
 
 html, body {
   scroll-behavior: smooth;
+  background-color: #ffefef;
 }
 
 .container {
@@ -22,30 +23,12 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 .container {
   width: 80%;
   height: 100%;
   margin: 0px auto;
-}
-
-.tittle {
-  font-size: 26px;
-  margin-top: 80px;
-  position: relative;
-  text-align: center;
-}
-.tittle::after {
-  content: "";
-  position: absolute;
-  left: calc(50% - 140px);
-  height: 3px;
-  width: 0;
-  border-left: 100px solid #5c1616;
-  border-right: 180px solid #315547;
-  bottom: -10px;
 }
 
 html,
@@ -60,8 +43,8 @@ body {
   width: 100%;
   height: 80px;
   position: fixed;
-  background-color: #2e92f7;
-  color: #ffffff;
+  background-color: transparent;
+  color: #ffefef;
   z-index: 99;
 }
 .header .header-content {
@@ -74,6 +57,7 @@ body {
   display: flex;
   font-weight: bold;
   font-size: 20px;
+  color: #ffefef;
 }
 .header .menu li {
   text-align: center;
@@ -83,12 +67,9 @@ body {
   margin-right: 0;
 }
 .header .menu li:hover {
-  color: #e48912;
+  color: #ffefef;
 }
 
-.index {
-  min-height: 100vh;
-}
 .index .index-content {
   display: flex;
   justify-content: space-around;
@@ -114,29 +95,18 @@ body {
 .index .index-text .index-text-wrap {
   margin-bottom: 20px;
 }
-.index a {
-  display: block;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-  padding: 5px;
+.index .btn {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  background-color: #2e92f7;
-  color: #ffffff;
+}
+.index a {
+  cursor: pointer;
   transition: 0.5s;
+  margin-left: 20px;
 }
 .index a:hover {
   transform: scale(1.2);
 }
 
-.about {
-  background-image: url(../img/background.jpg);
-  background-size: cover;
-  background-position: center;
-}
 .about .about-content {
   min-height: 100vh;
   display: flex;
@@ -160,7 +130,8 @@ body {
   background-position: center center;
 }
 
-.profoilos img {
+.profoilos .img-fluid {
+  display: block;
   height: 350px;
 }
 
@@ -172,4 +143,4 @@ body {
 }
 .footer .social img {
   width: 40px;
-}/*# sourceMappingURL=main.css.map */
+}
