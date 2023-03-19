@@ -96,7 +96,7 @@ body {
   margin-bottom: 20px;
 }
 .index .btn {
-  display: flex;
+  text-align: left;
 }
 .index a {
   cursor: pointer;
@@ -143,4 +143,4 @@ body {
 }
 .footer .social img {
   width: 40px;
-}
+}/*# sourceMappingURL=main.css.map */
