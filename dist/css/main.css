@@ -107,27 +107,11 @@ body {
   transform: scale(1.2);
 }
 
-.about .about-content {
-  min-height: 100vh;
+.about ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.about .content-wrap {
-  display: flex;
-  width: 100%;
-  border: 5px solid black;
-}
-.about .content-wrap > div {
-  width: 50%;
-}
-.about .about-text {
-  background-color: rgb(174, 79, 79);
-}
-.about .about-img {
-  background-image: url(../img/20230205.jpg);
-  background-size: cover;
-  background-position: center center;
+.about li {
+  flex-grow: 1;
 }
 
 .profoilos .img-fluid {
@@ -143,4 +127,4 @@ body {
 }
 .footer .social img {
   width: 40px;
-}/*# sourceMappingURL=main.css.map */
+}

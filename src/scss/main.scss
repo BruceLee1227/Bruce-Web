@@ -93,28 +93,11 @@ body {
 }
 // 關於
 .about{
-
-    .about-content{
-        min-height: 100vh;
+    ul{
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
-    .content-wrap{
-        display: flex;
-        width: 100%;
-        border: 5px solid black;
-        >div{
-            width: 50%;
-        }
-    }
-    .about-text{
-        background-color: rgb(174, 79, 79);
-    }
-    .about-img{
-        background-image: url(../img/20230205.jpg);
-        background-size: cover;
-        background-position: center center;
+    li{
+        flex-grow: 1;
     }
 }
 // 作品
