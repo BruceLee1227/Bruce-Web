@@ -25,12 +25,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 80%;
-  height: 100%;
-  margin: 0px auto;
-}
-
 html,
 body {
   width: 100%;
@@ -107,16 +101,43 @@ body {
   transform: scale(1.2);
 }
 
+.about {
+  padding-top: 7.75rem;
+  padding-bottom: 5.25rem;
+}
 .about ul {
   display: flex;
 }
-.about li {
-  flex-grow: 1;
+.about .skill-box {
+  padding: 5px;
+  border: 1px rgba(0, 0, 0, 0.29) solid;
+  margin-right: 10px;
+}
+.about .skill-box:last-child {
+  margin-right: 0;
 }
 
-.profoilos .img-fluid {
-  display: block;
-  height: 350px;
+.profoilos {
+  padding-top: 7.75rem;
+  padding-bottom: 5.25rem;
+}
+.profoilos .card {
+  border: 0;
+  background-color: inherit;
+  margin-right: 10px;
+}
+.profoilos .card:last-child {
+  margin-right: 0;
+}
+.profoilos img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.contact {
+  padding-top: 7.75rem;
+  padding-bottom: 5.25rem;
+  background-color: green;
 }
 
 .footer {

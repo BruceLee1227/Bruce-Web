@@ -93,19 +93,38 @@ body {
 }
 // 關於
 .about{
+    @include padding;
     ul{
         display: flex;
     }
-    li{
-        flex-grow: 1;
+    .skill-box{
+        padding: 5px;
+        border: 1px rgba(0, 0, 0, 0.29) solid;
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
     }
 }
 // 作品
 .profoilos{
-    .img-fluid{
-        display: block;
-        height: 350px;
+    @include padding;
+    .card{
+        border: 0;
+        background-color: inherit;
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
     }
+    img{
+        vertical-align: middle;
+        border-style: none;
+    }
+}
+.contact{
+    @include padding;
+    background-color: green;
 }
 // 頁尾
 .footer {
