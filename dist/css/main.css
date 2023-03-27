@@ -28,7 +28,6 @@ a {
 html,
 body {
   width: 100%;
-  height: 1000vh;
   font-weight: bolder;
   font-family: "Noto Sans TC", sans-serif;
 }
@@ -104,17 +103,18 @@ body {
 .about {
   padding-top: 7.75rem;
   padding-bottom: 5.25rem;
+  background-color: red;
 }
-.about ul {
+.about .wrap {
   display: flex;
 }
-.about .skill-box {
-  padding: 5px;
-  border: 1px rgba(0, 0, 0, 0.29) solid;
-  margin-right: 10px;
+.about .left {
+  background-color: blue;
+  width: 50%;
 }
-.about .skill-box:last-child {
-  margin-right: 0;
+.about .right {
+  width: 50%;
+  background-color: green;
 }
 
 .profoilos {
@@ -137,15 +137,18 @@ body {
 .contact {
   padding-top: 7.75rem;
   padding-bottom: 5.25rem;
-  background-color: green;
 }
-
-.footer {
-  background: rgb(78, 154, 228);
-  background: linear-gradient(135deg, rgb(78, 154, 228) 10%, rgb(255, 255, 255) 10%);
-  display: flex;
-  justify-content: space-around;
+.contact .form-group {
+  position: relative;
+  margin-bottom: 50px;
 }
-.footer .social img {
-  width: 40px;
+.contact .form-group .label-control {
+  position: absolute;
+  color: rgb(66, 61, 61);
+}
+.contact .form-group .form-control-input {
+  width: 100%;
+}
+.contact .form-group .form-control-textarea {
+  width: 100%;
 }
