@@ -49,8 +49,7 @@ body {
 
 // 首頁
 .index{
-    // min-height: 100vh;
-
+    min-height: 100vh;
     .index-content{
         display: flex;
         justify-content: space-around;
@@ -99,6 +98,7 @@ body {
     }
     .left{
         background-color: blue;
+        background-image: url("/dist/img/luffy.jpg");
         width: 50%;
     }
     .right{
@@ -125,19 +125,30 @@ body {
 // 聯絡
 .contact{
     @include padding;
-    // background-color: green;
+    .form-container{
+        width: 50%;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: $color_blue;
+    }
     .form-group{
         position: relative;
         margin-bottom: 50px;
         .label-control{
             position: absolute;
+            top: 5px;
+            left: 5px;
             color: rgb(66, 61, 61);
+            
         }
         .form-control-input{
+            border-radius: 5px;
             width: 100%;
+            padding: 5px;
         }
         .form-control-textarea{
             width: 100%;
+            height: 300px;
         }
     }
 }
