@@ -7,7 +7,7 @@
 }
 $color_blue: #2e92f7;
 $color_white: #ffefef;
-$color_gray:rgba(196, 177, 177, 0.938);
+$color_gray:rgba(241, 238, 238, 0.938);
 
 @mixin padding{
     padding-top: 7.75rem;
@@ -15,7 +15,10 @@ $color_gray:rgba(196, 177, 177, 0.938);
 }
 html,body{
     scroll-behavior: smooth;
-    background-color: $color_white;
+    background-color: $color_gray;
+    width: 100%;
+    font-weight: bolder;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 .container{
     width: 80%;

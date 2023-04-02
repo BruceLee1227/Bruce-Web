@@ -8,7 +8,10 @@
 
 html, body {
   scroll-behavior: smooth;
-  background-color: #ffefef;
+  background-color: rgba(241, 238, 238, 0.938);
+  width: 100%;
+  font-weight: bolder;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .container {
@@ -23,13 +26,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-html,
-body {
-  width: 100%;
-  font-weight: bolder;
-  font-family: "Noto Sans TC", sans-serif;
 }
 
 .header {
@@ -86,6 +82,10 @@ body {
 .index .btns {
   text-align: left;
 }
+.index .btns a {
+  margin-left: 0;
+  margin-right: 20px;
+}
 .index .index-text {
   display: flex;
   flex-direction: column;
@@ -107,6 +107,22 @@ body {
   padding-top: 7.75rem;
   padding-bottom: 5.25rem;
   min-height: 100vh;
+}
+.about .about-img {
+  padding: 10px;
+}
+.about ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.about ul li {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.about ul li:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .profoilos {
@@ -163,4 +179,4 @@ body {
 .contact .form-group .form-control-textarea {
   width: 100%;
   height: 200px;
-}
+}/*# sourceMappingURL=main.css.map */
