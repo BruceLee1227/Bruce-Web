@@ -137,6 +137,9 @@
         &:last-child{
             margin-bottom: 0;
         }
+        &:focus{
+            color: yellow;
+        }
         .label-control{
             position: absolute;
             top: 5px;
@@ -154,6 +157,7 @@
             height: 200px;
         }
     }
+    
 }
 // 頁尾
 .footer{
