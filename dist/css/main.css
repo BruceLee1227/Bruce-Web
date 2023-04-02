@@ -148,7 +148,7 @@ a {
   padding-bottom: 5.25rem;
 }
 .contact .form-container {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   padding: 20px;
   background-color: #2e92f7;
@@ -181,6 +181,9 @@ a {
   height: 200px;
 }
 
+.footer {
+  background-color: green;
+}
 .footer ul {
   display: flex;
 }

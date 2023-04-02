@@ -121,7 +121,7 @@
 .contact{
     @include padding;
     .form-container{
-        width: 50%;
+        width: 80%;
         margin: 0 auto;
         padding: 20px;
         background-color: $color_blue;
@@ -155,8 +155,9 @@
         }
     }
 }
+// 頁尾
 .footer{
-    // background-color: green;
+    background-color: green;
     ul{
         display: flex;
     }
