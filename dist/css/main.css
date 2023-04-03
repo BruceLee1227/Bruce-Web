@@ -8,7 +8,7 @@
 
 html, body {
   scroll-behavior: smooth;
-  background-color: rgba(241, 238, 238, 0.938);
+  background-color: rgba(245, 227, 227, 0.938);
   width: 100%;
   font-weight: bolder;
   font-family: "Noto Sans TC", sans-serif;
@@ -28,12 +28,27 @@ a {
   text-decoration: none;
 }
 
+.tittle {
+  font-size: 64px;
+  position: relative;
+  margin-bottom: 80px;
+}
+.tittle::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 140px);
+  width: 0;
+  height: 3px;
+  border-left: solid 100px #212c36;
+  border-right: solid 180px #2e92f7;
+}
+
 .header {
   width: 100%;
   height: 80px;
   position: fixed;
-  background-color: transparent;
-  color: #ffefef;
+  background-color: #ffefef;
   z-index: 99;
 }
 .header .header-content {
@@ -55,12 +70,13 @@ a {
 .header .menu li:last-child {
   margin-right: 0;
 }
-.header .menu li:hover {
-  color: #ffefef;
+.header a:hover {
+  color: #212c36;
 }
 
 .index {
   min-height: 100vh;
+  background-repeat: no-repeat;
 }
 .index .index-content {
   display: flex;
@@ -83,8 +99,17 @@ a {
   text-align: left;
 }
 .index .btns a {
+  background-color: #2e92f7;
+  color: #ffefef;
   margin-left: 0;
-  margin-right: 20px;
+  margin-right: 55px;
+}
+.index .btns a:last-child {
+  margin-right: 0;
+}
+.index .btns a:hover {
+  background-color: #212c36;
+  color: rgba(245, 227, 227, 0.938);
 }
 .index .index-text {
   display: flex;
@@ -104,12 +129,19 @@ a {
 }
 
 .about {
-  padding-top: 7.75rem;
+  padding-top: 5.25rem;
   padding-bottom: 5.25rem;
   min-height: 100vh;
+  background-color: #ffefef;
 }
 .about .about-img {
-  padding: 10px;
+  background-image: url(/img/luffy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 380px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 .about ul {
   display: flex;
@@ -126,16 +158,20 @@ a {
 }
 
 .profoilos {
-  padding-top: 7.75rem;
+  padding-top: 5.25rem;
   padding-bottom: 5.25rem;
+  background-color: rgba(245, 227, 227, 0.938);
 }
 .profoilos .card {
   border: 0;
   background-color: inherit;
-  margin-right: 10px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
-.profoilos .card:last-child {
-  margin-right: 0;
+.profoilos .card-img {
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .profoilos img {
   height: 300px;
@@ -144,8 +180,9 @@ a {
 }
 
 .contact {
-  padding-top: 7.75rem;
+  padding-top: 5.25rem;
   padding-bottom: 5.25rem;
+  background-color: #ffefef;
 }
 .contact .form-container {
   width: 80%;
@@ -154,13 +191,9 @@ a {
   background-color: #2e92f7;
   border-radius: 20px;
 }
-.contact hr {
-  max-width: 80%;
-  margin: 20px auto;
-}
 .contact .form-group {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 .contact .form-group:last-child {
   margin-bottom: 0;
@@ -185,11 +218,6 @@ a {
 }
 
 .footer {
-  background-color: green;
+  background-color: rgba(97, 96, 96, 0.938);
+  padding: 30px;
 }
-.footer ul {
-  display: flex;
-}
-.footer img {
-  width: 10%;
-}/*# sourceMappingURL=main.css.map */
