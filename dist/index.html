@@ -18,26 +18,33 @@
 
 <body>
     <!-- 載入畫面 -->
-    <div class="pageloading" id="pageloading">
+    <!-- <div class="pageloading" id="pageloading">
         <h1>Loading</h1>
         <div class="loading">
             <div class="bar" id="bar"></div>
           </div>
-    </div>
+    </div> -->
     <!-- 導覽列 -->
     <div class="header">
         <div class="container">
             <div class="header-content">
+                <input type="checkbox" id="rwd-menu-switch">
+                <!-- LOGO -->
                 <div>
                     <a href="#index">Bruce Web</a>
                 </div>
-                <div>
-                    <ul class="menu">
+                <div class="menu extend">
+                    <ul>
                         <li><a href="#about">關於我</a></li>
                         <li><a href="#profoilos">作品</a></li>
                         <li><a href="#contact">聯絡方式</a></li>
                     </ul>
                 </div>
+                <label for="rwd-menu-switch" class="rwd-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
             </div>
         </div>
     </div>
@@ -57,11 +64,8 @@
                             <a href="#contact" class="btn">聯絡方式</a>
                         </div>
                     </div>
-                    
                     <div class="index-img">
-                        <div>
-                            <img src="img/frontend.png" alt="">
-                        </div>
+                        <img src="img/frontend.png" alt="">
                     </div>
                 </div>
             </div>
@@ -69,37 +73,26 @@
     </div>
     <!-- 關於 -->
     <div id="about" class="about">
+        <h2 class="text-center tittle">About Me</h2>
         <div class="container">
-            <h2 class="text-center tittle">About Me</h2>
-            <div class="row">
-                <div class="col-lg-5">
+            <div class="about-content">
+                <div class="content-wrap">
                     <div class="about-img">
+                        <div>
+                            <img src="img/about_img.svg" alt="I am here">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-7">
                     <div class="about-text">
                         <h3>Bruce</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus provident ullam alias fugit laudantium neque commodi, in beatae molestiae iusto aliquam consequatur, praesentium magnam soluta voluptates ea quis impedit.</p>
+                        <p>伊朗曾講過，一個沒有知識的旅行者等於一隻沒翅膀的鳥兒。這段話非常有意思。生活中，若前端出現了，我們就不得不考慮它出現了的事實。杜克洛克斯說過一句著名的話，科學，細心地玩味起來，並不是別。這段話雖短，卻足以改變人類的歷史。若沒有前端的存在，那麼後果可想而知。前端勢必能夠左右未來。培根說過一句富有哲理的話，合理安排時間，就等於節約時間。我希望諸位也能好好地體會這句話。既然，培根告訴我們，要知道對好事的稱頌過於誇大，也會招來人們的反感輕蔑和嫉妒。這讓我的思緒清晰了。</p>
                         <hr>
                         <ul>
-                            <li>
-                                <img src="img/skill_01.png" alt="">
-                            </li>
-                            <li>
-                                <img src="img/skill_02.png" alt="">
-                            </li>
-                            <li>
-                                <img src="img/skill_03.png" alt="">
-                            </li>
-                            <li>
-                                <img src="img/skill_04.png" alt="">
-                            </li>
-                            <li>
-                                <img src="img/skill_05.png" alt="">
-                            </li>
-                            <li>
-                                <img src="img/skill_06.png" alt="">
-                            </li>
+                            <li><img src="img/skill_01.png" alt=""></li>
+                            <li><img src="img/skill_02.png" alt=""></li>
+                            <li><img src="img/skill_03.png" alt=""></li>
+                            <li><img src="img/skill_04.png" alt=""></li>
+                            <li><img src="img/skill_05.png" alt=""></li>
+                            <li><img src="img/skill_06.png" alt=""></li>
                         </ul>
                     </div>
                 </div>
@@ -113,7 +106,7 @@
             <div class="frontend">
                 <h3>前端作品</h3>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="card-img">
                                 <a href="https://codepen.io/xxhdklwi-the-decoder/pen/gOjazvL">
@@ -126,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="card-img">
                                 <a href="https://codepen.io/xxhdklwi-the-decoder/pen/yLpbNBY">
@@ -139,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="card-img">
                                 <a href="https://codepen.io/xxhdklwi-the-decoder/pen/wvpxbNV">
@@ -152,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="card-img">
                                 <a href="https://codepen.io/xxhdklwi-the-decoder/pen/wvpxbNV">
@@ -191,7 +184,7 @@
                                 <textarea class="form-control-textarea"></textarea>
                             </div>
                             <div class="form-group text-center">
-                                <button type="submit" class="btn btn-primary">送出</button>
+                                <button type="submit" class="btn">送出</button>
                             </div>
                         </form>
                     </div>
@@ -207,7 +200,7 @@
             </p>
         </div>
     </div>
-    
    </body>
+   <script src="js/bootstrap.js"></script>
    <script src="js/index.js"></script>
 </html>
