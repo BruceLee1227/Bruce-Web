@@ -116,6 +116,9 @@ a {
 .index {
   padding-top: 5.25rem;
   padding-bottom: 5.25rem;
+  background-image: url(../img/backgroundimg.jpg);
+  background-size: cover;
+  color: #ffefef;
 }
 .index .index-content {
   display: flex;
@@ -177,7 +180,6 @@ a {
 .about .about-content .content-wrap {
   display: flex;
   width: 100%;
-  align-items: center;
 }
 .about .about-content .content-wrap > div {
   width: 50%;
@@ -391,8 +393,37 @@ a {
   .content-wrap {
     flex-direction: column;
   }
-  .content-wrap .btns .btn {
-    margin-bottom: 32px;
-    font-size: 32px;
+  .h1-large {
+    font-size: 64px;
+    text-align: center;
+  }
+  .h2-large {
+    font-size: 56px;
+    text-align: center;
+  }
+  .p-large {
+    font-size: 40px;
+    text-align: center;
+  }
+  .index-text {
+    width: 100%;
+    border: 1px dashed black;
+  }
+  .index-text .btns {
+    display: flex;
+    justify-content: center;
+  }
+  .index-text .btns a {
+    font-size: 8px;
+  }
+  .index-img {
+    width: 100%;
+    border: 1px solid white;
+  }
+  .about-img {
+    width: 100%;
+  }
+  .about-text {
+    width: 100%;
   }
 }

@@ -129,11 +129,38 @@
     }
     .content-wrap{
         flex-direction: column;
+    }
+    .h1-large{
+        font-size: 64px;
+        text-align: center;
+    }
+    .h2-large{
+        font-size: 56px;
+        text-align: center;
+    }
+    .p-large{
+        font-size: 40px;
+        text-align: center;
+    }
+    .index-text{
+        width: 100%;
+        border: 1px dashed black;
         .btns{
-            .btn{
-                margin-bottom: 32px;
-                font-size: 32px;
+            display: flex;
+            justify-content: center;
+            a{
+                font-size: 8px;
             }
         }
+    }
+    .index-img{
+        width: 100%;
+        border: 1px solid white;
+    }
+    .about-img{
+        width: 100%;
+    }
+    .about-text{
+        width: 100%;
     }
 }
