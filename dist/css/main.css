@@ -296,6 +296,15 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.footer ul {
+  display: flex;
+}
+.footer ul li {
+  margin-right: 20px;
+}
+.footer ul li:last-child {
+  margin-right: 0;
+}
 
 .rwd-icon {
   position: relative;
