@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favorite icon引入 -->
-    
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/02594a43a0.js" crossorigin="anonymous"></script>
     <!-- 引入字體 -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
@@ -19,13 +19,15 @@
 <body>
     <!-- 載入畫面 -->
     <!-- <div class="pageloading" id="pageloading">
-        <h1>Loading</h1>
+        <h1>
+            <span></span>
+            Loading</h1>
         <div class="loading">
             <div class="bar" id="bar"></div>
           </div>
     </div> -->
     <!-- 導覽列 -->
-    <div class="header">
+    <div class="header" id="nav-bar">
         <div class="container">
             <div class="header-content">
                 <input type="checkbox" id="rwd-menu-switch">
@@ -33,7 +35,7 @@
                 <div>
                     <a href="#index">Bruce Web</a>
                 </div>
-                <div class="menu extend">
+                <div class="menu popup">
                     <ul>
                         <li><a href="#about">關於我</a></li>
                         <li><a href="#profoilos">作品</a></li>
@@ -54,11 +56,9 @@
             <div class="index-content">
                 <div class="content-wrap">
                     <div class="index-text">
-                        <div class="index-text-wrap">
-                            <h1 class="h1-large">My name is</h1>
-                            <h2 class="h2-large">Bruce</h2>
-                            <p class="p-large">Welcome to My web😁</p>
-                        </div>
+                        <h1 class="h1-large">My name is</h1>
+                        <h2 class="h2-large">Bruce</h2>
+                        <p class="p-large">Welcome to My web😁</p>
                         <div class="btns">
                             <a href="#about" class="btn">了解更多</a>
                             <a href="#contact" class="btn">聯絡方式</a>
@@ -84,7 +84,12 @@
                     </div>
                     <div class="about-text">
                         <h3>Bruce</h3>
-                        <p>伊朗曾講過，一個沒有知識的旅行者等於一隻沒翅膀的鳥兒。這段話非常有意思。生活中，若前端出現了，我們就不得不考慮它出現了的事實。杜克洛克斯說過一句著名的話，科學，細心地玩味起來，並不是別。這段話雖短，卻足以改變人類的歷史。若沒有前端的存在，那麼後果可想而知。前端勢必能夠左右未來。培根說過一句富有哲理的話，合理安排時間，就等於節約時間。我希望諸位也能好好地體會這句話。既然，培根告訴我們，要知道對好事的稱頌過於誇大，也會招來人們的反感輕蔑和嫉妒。這讓我的思緒清晰了。</p>
+                        <p>
+                            出生於台中 <br>
+                            目前在潭子從事三次元量測員的工作 <br>
+                            因緣際會下接觸下前端 <br>
+                            進行了前端自學
+                        </p>
                         <hr>
                         <ul>
                             <li><img src="img/skill_01.png" alt=""></li>
@@ -109,8 +114,8 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="card-img">
-                                <a href="https://codepen.io/xxhdklwi-the-decoder/pen/gOjazvL">
-                                    <img src="img/porfolio_1.jpg" alt="" class="img-fluid">
+                                <a href="https://codepen.io/xxhdklwi-the-decoder/pen/gOjazvL" target="_blank">
+                                    <img src="img/notfound.jpg" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -122,8 +127,8 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="card-img">
-                                <a href="https://codepen.io/xxhdklwi-the-decoder/pen/yLpbNBY">
-                                    <img src="img/porfolio_2.jpg" alt="" class="img-fluid">
+                                <a href="https://codepen.io/xxhdklwi-the-decoder/pen/yLpbNBY" target="_blank">
+                                    <img src="img/notfound.jpg" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -135,8 +140,8 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="card-img">
-                                <a href="https://codepen.io/xxhdklwi-the-decoder/pen/wvpxbNV">
-                                    <img src="img/porfolio_3.jpg" alt="" class="img-fluid">
+                                <a href="https://codepen.io/xxhdklwi-the-decoder/pen/wvpxbNV" target="_blank">
+                                    <img src="img/notfound.jpg" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -148,13 +153,13 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="card">
                             <div class="card-img">
-                                <a href="https://codepen.io/xxhdklwi-the-decoder/pen/wvpxbNV">
-                                    <img src="img/porfolio_4.jpg" alt="" class="img-fluid">
+                                <a href="https://codepen.io/xxhdklwi-the-decoder/pen/eYeEBNK" target="_blank">
+                                    <img src="img/notfound.jpg" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <div class="card-body">
-                                <strong>瑜珈介紹</strong>
-                                -Bootstrap進行簡易切版練習
+                                <strong>品牌視覺引導</strong>
+                                -HTML與SCSS切版練習
                             </div>
                         </div>
                     </div>
@@ -195,9 +200,19 @@
     <!-- 頁尾 -->
     <div class="footer">
         <div class="container">
-            <p>Copyright © by Bruce Lee.
-                <br>All rights reserved .
-            </p>
+            <div class="footer-content">
+                <p>Copyright © by Bruce Lee.
+                    <br>All rights reserved .
+                </p>
+                <div class="social">
+                    <a href="https://github.com/">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                    <a href="https://www.behance.net/bruce8046efa0">
+                        <i class="fa-brands fa-square-behance fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
    </body>

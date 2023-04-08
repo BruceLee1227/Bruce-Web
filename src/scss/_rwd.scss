@@ -11,7 +11,7 @@
         // display: inline-block;
         width: 30px;
         height: 5px;
-        background-color: $color_white;
+        background-color: $color_blue;
         margin-bottom: 5px;
         transition-property: background-color transform;
         transition-duration: 0.5s;
@@ -33,9 +33,7 @@
     &:checked {
         ~.rwd-icon {
             >span {
-                background-color: $color_white;
                 position: absolute;
-
                 &:first-child {
                     top: -5px;
                     transform: rotate(45deg);
@@ -72,24 +70,9 @@
                     margin-bottom: 15px;
 
                     &:last-child {
-                        margin-bottom: 0;
+                        margin-bottom: 20px;
                     }
                 }
-
-                &.extend ul {
-                    position: absolute;
-                    top: 75px;
-                    background-color: $color_blue;;
-                    width: 100%;
-                    left: 0;
-                    border-radius: 10px;
-                    border-top-right-radius: 0;
-                    border-top-left-radius: 0;
-                    padding-top: 15px;
-                    flex-direction: column;
-                    
-                }
-
                 &.popup {
                     position: fixed;
                     width: 100%;
@@ -99,8 +82,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    
-                    
+
                     &::after {
                         content: '';
                         position: absolute;
@@ -116,8 +98,7 @@
                     ul {
                         width: 80%;
                         position: relative;
-                        background-color: $color_blue;
-                        color:$color_white;
+                        background: #fff;
                         z-index: 2;
                         padding: 20px;
                         display: flex;
@@ -128,28 +109,36 @@
         }
     }
     .content-wrap{
-        flex-direction: column;
+        width: 100%;
     }
     .h1-large{
-        font-size: 64px;
-        text-align: center;
-    }
-    .h2-large{
-        font-size: 56px;
-        text-align: center;
-    }
-    .p-large{
         font-size: 40px;
         text-align: center;
     }
+    .h2-large{
+        font-size: 32px;
+        text-align: left;
+    }
+    .p-large{
+        font-size: 24px;
+        text-align: left;
+    }
+    .btns{
+        font-size: 24px;
+    }
     .index-text{
         width: 100%;
+        padding: 50px;
         border: 1px dashed black;
         .btns{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             a{
-                font-size: 8px;
+                font-size: 32px;
+                margin-right: 0;
+                margin-bottom: 24px;
+                letter-spacing: normal;
             }
         }
     }
@@ -159,8 +148,14 @@
     }
     .about-img{
         width: 100%;
+        
     }
     .about-text{
         width: 100%;
+    }
+    .frontend{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

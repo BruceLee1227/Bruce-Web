@@ -8,7 +8,7 @@
 
 html, body {
   scroll-behavior: smooth;
-  background-color: rgba(245, 227, 227, 0.938);
+  background-color: rgba(232, 229, 229, 0.938);
   width: 100%;
   font-weight: bolder;
   font-family: "Noto Sans TC", sans-serif;
@@ -57,7 +57,7 @@ a {
   z-index: 3;
 }
 .pageloading h1 {
-  color: #ffefef;
+  color: #ffebeb;
   margin-bottom: 20px;
 }
 .pageloading .loading {
@@ -70,7 +70,7 @@ a {
 .pageloading .loading .bar {
   width: 0%;
   height: 100%;
-  background-color: #ffefef;
+  background-color: #ffebeb;
 }
 
 .complete {
@@ -84,7 +84,6 @@ a {
   width: 100%;
   height: 80px;
   position: fixed;
-  background-color: #2e92f7;
   z-index: 2;
 }
 .header .header-content {
@@ -92,6 +91,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffebeb;
+  color: #2e92f7;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .header .menu ul {
   display: flex;
@@ -106,7 +111,6 @@ a {
   margin-right: 0;
 }
 .header a {
-  color: #ffefef;
   transition: 0.5s;
 }
 .header a:hover {
@@ -118,18 +122,20 @@ a {
   padding-bottom: 5.25rem;
   background-image: url(../img/backgroundimg.jpg);
   background-size: cover;
-  color: #ffefef;
+  color: #ffebeb;
+  background-color: black;
 }
 .index .index-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 20px;
   min-height: 100vh;
+  opacity: 1;
 }
 .index .index-content .content-wrap {
   display: flex;
   width: 100%;
-  align-items: center;
   justify-content: space-between;
 }
 .index .index-content .content-wrap > div {
@@ -139,47 +145,40 @@ a {
 .index .index-img img {
   width: 80%;
 }
-.index .btns {
-  text-align: left;
-}
-.index .btns a {
-  background-color: #2e92f7;
-  color: #ffefef;
-  margin-left: 0;
-  margin-right: 40px;
-}
-.index .btns a:last-child {
-  margin-right: 0;
-}
-.index .btns a:hover {
-  background-color: #212c36;
-  color: #ffefef;
-}
 .index .index-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: justify;
 }
-.index .index-text .index-text-wrap {
-  margin-bottom: 20px;
+.index .index-text .btns {
+  text-align: left;
 }
-.index a {
+.index .index-text a {
   cursor: pointer;
   transition: 0.5s;
-  margin-left: 20px;
+  margin-left: 0;
+  background-color: #2e92f7;
+  color: #ffebeb;
+  margin-right: 40px;
 }
-.index a:hover {
+.index .index-text a:last-child {
+  margin-right: 0;
+}
+.index .index-text a:hover {
   transform: scale(1.2);
+  background-color: #212c36;
+  color: #ffebeb;
 }
 
 .about {
   padding-top: 5.25rem;
   padding-bottom: 5.25rem;
-  background-color: #ffefef;
+  background-color: rgba(232, 229, 229, 0.938);
 }
 .about .about-content .content-wrap {
   display: flex;
-  width: 100%;
+  align-items: center;
 }
 .about .about-content .content-wrap > div {
   width: 50%;
@@ -199,6 +198,7 @@ a {
 .about ul {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding-left: 0;
 }
 .about ul li {
@@ -215,7 +215,7 @@ a {
 .profoilos {
   padding-top: 5.25rem;
   padding-bottom: 5.25rem;
-  background-color: rgba(245, 227, 227, 0.938);
+  background-color: rgba(232, 229, 229, 0.938);
 }
 .profoilos .card {
   border: 1px solid black;
@@ -223,12 +223,16 @@ a {
   margin-right: 40px;
   margin-bottom: 40px;
   overflow: hidden;
+  cursor: pointer;
 }
 .profoilos .card-img {
   overflow: hidden;
 }
 .profoilos .card-body {
-  background-color: #ffefef;
+  background-color: #ffebeb;
+}
+.profoilos .card-body:hover {
+  color: #2e92f7;
 }
 .profoilos img {
   height: 300px;
@@ -239,7 +243,7 @@ a {
 .contact {
   padding-top: 5.25rem;
   padding-bottom: 5.25rem;
-  background-color: #ffefef;
+  background-color: rgba(232, 229, 229, 0.938);
 }
 .contact .form-container {
   width: 80%;
@@ -276,7 +280,7 @@ a {
 }
 .contact .form-group .btn {
   background-color: #2e92f7;
-  color: #ffefef;
+  color: #ffebeb;
   transition: 0.5s;
 }
 .contact .form-group .btn:hover {
@@ -285,8 +289,12 @@ a {
 }
 
 .footer {
-  background-color: rgba(97, 96, 96, 0.938);
+  background-color: #ffebeb;
   padding: 30px;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .rwd-icon {
@@ -300,7 +308,7 @@ a {
 .rwd-icon > span {
   width: 30px;
   height: 5px;
-  background-color: #ffefef;
+  background-color: #2e92f7;
   margin-bottom: 5px;
   transition-property: background-color transform;
   transition-duration: 0.5s;
@@ -316,7 +324,6 @@ a {
   display: none;
 }
 #rwd-menu-switch:checked ~ .rwd-icon > span {
-  background-color: #ffefef;
   position: absolute;
 }
 #rwd-menu-switch:checked ~ .rwd-icon > span:first-child {
@@ -346,19 +353,7 @@ a {
     margin-bottom: 15px;
   }
   #rwd-menu-switch:checked ~ .menu li:last-child {
-    margin-bottom: 0;
-  }
-  #rwd-menu-switch:checked ~ .menu.extend ul {
-    position: absolute;
-    top: 75px;
-    background-color: #2e92f7;
-    width: 100%;
-    left: 0;
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    padding-top: 15px;
-    flex-direction: column;
+    margin-bottom: 20px;
   }
   #rwd-menu-switch:checked ~ .menu.popup {
     position: fixed;
@@ -383,38 +378,45 @@ a {
   #rwd-menu-switch:checked ~ .menu.popup ul {
     width: 80%;
     position: relative;
-    background-color: #2e92f7;
-    color: #ffefef;
+    background: #fff;
     z-index: 2;
     padding: 20px;
     display: flex;
     flex-direction: column;
   }
   .content-wrap {
-    flex-direction: column;
+    width: 100%;
   }
   .h1-large {
-    font-size: 64px;
-    text-align: center;
-  }
-  .h2-large {
-    font-size: 56px;
-    text-align: center;
-  }
-  .p-large {
     font-size: 40px;
     text-align: center;
   }
+  .h2-large {
+    font-size: 32px;
+    text-align: left;
+  }
+  .p-large {
+    font-size: 24px;
+    text-align: left;
+  }
+  .btns {
+    font-size: 24px;
+  }
   .index-text {
     width: 100%;
+    padding: 50px;
     border: 1px dashed black;
   }
   .index-text .btns {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .index-text .btns a {
-    font-size: 8px;
+    font-size: 32px;
+    margin-right: 0;
+    margin-bottom: 24px;
+    letter-spacing: normal;
   }
   .index-img {
     width: 100%;
@@ -425,5 +427,10 @@ a {
   }
   .about-text {
     width: 100%;
+  }
+  .frontend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

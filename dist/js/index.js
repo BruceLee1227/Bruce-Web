@@ -1,5 +1,5 @@
-// console.log("Hello");
-// // 載入畫面
+console.log("Hello");
+// 載入畫面
 // let percent=0;
 // let br=document.querySelector("#bar");
 // let pl=document.querySelector("#pageloading")
@@ -11,4 +11,3 @@
 //         pl.classList.add("complete");
 //     }
 // },60);
-// // clearTimeout(timer);
