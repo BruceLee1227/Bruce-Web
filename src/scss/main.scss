@@ -146,7 +146,7 @@
     @include padding;
     // background-image: url(../img/backgroundimg02.jpg);
     // background-size: cover;
-    background-color: $color_gray;
+    // background-color: $color_gray;
     .about-content{
         .content-wrap{
             display: flex;
@@ -189,7 +189,7 @@
 // 作品
 .profoilos{
     @include padding;
-    background-color: $color_gray;
+    // background-color: $color_gray;
     .card{
         border: 1px solid black;
         // border-radius: 20px;
@@ -217,7 +217,7 @@
 // 聯絡
 .contact{
     @include padding;
-    background-color: $color_gray;
+    // background-color: $color_gray;
     .form-container{
         width: 80%;
         margin: 0 auto;
