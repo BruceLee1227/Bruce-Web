@@ -51,7 +51,7 @@
         }
     }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 390px){
     .rwd-icon {
         display: flex;
     }
@@ -117,11 +117,11 @@
     }
     .h2-large{
         font-size: 32px;
-        text-align: left;
+        text-align: center;
     }
     .p-large{
         font-size: 24px;
-        text-align: left;
+        text-align: center;
     }
     .btns{
         font-size: 24px;
@@ -129,11 +129,12 @@
     .index-text{
         width: 100%;
         padding: 50px;
+        display: flex;
         // border: 1px dashed black;
         .btns{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
             a{
                 font-size: 32px;
                 margin-right: 0;
@@ -143,15 +144,22 @@
         }
     }
     .index-img{
-        width: 100%;
+        display: none;
+        // width: 100%;
         // border: 1px solid white;
     }
     .about-img{
-        width: 100%;
-        
+        width: 50%;
     }
     .about-text{
-        width: 100%;
+        ul{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            img{
+                width: 50%;
+            }
+        }
     }
     .frontend{
         display: flex;

@@ -36,15 +36,15 @@ function listen(path, callback) {
             }
         })
 }
+write(this.items, 'todo');
+// ;(async () => {
+//     let result = await write('BBB', 'test')
+//     console.log(result)
 
-;(async () => {
-    let result = await write('BBB', 'test')
-    console.log(result)
+//     let response = await read('test')
+//     console.log(response)
 
-    let response = await read('test')
-    console.log(response)
-
-    listen('test', (value) => {
-        console.log(value)
-    })
-})()
+//     listen('test', (value) => {
+//         console.log(value)
+//     })
+// })()

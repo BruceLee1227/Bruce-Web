@@ -8,7 +8,6 @@
 
 html, body {
   scroll-behavior: smooth;
-  background-color: rgba(231, 228, 228, 0.925);
   width: 100%;
   font-weight: bolder;
   font-family: "Noto Sans TC", sans-serif;
@@ -129,16 +128,20 @@ a {
   align-items: center;
   min-height: 100vh;
 }
+.index .index-content .index-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.index .index-content .index-text > div {
+  width: 50%;
+}
 .index .index-content .content-wrap {
   display: flex;
   width: 100%;
   background-color: rgba(80, 88, 155, 0.651);
   border-radius: 20px;
   justify-content: space-between;
-}
-.index .index-content .content-wrap > div {
-  width: 50%;
-  padding: 20px;
 }
 .index .index-img img {
   width: 80%;
@@ -151,7 +154,7 @@ a {
   color: #fcf5f5;
 }
 .index .index-text .btns {
-  text-align: left;
+  text-align: center;
 }
 .index .index-text a {
   cursor: pointer;
@@ -195,8 +198,6 @@ a {
 }
 .about ul {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   padding-left: 0;
 }
 .about ul li {
@@ -217,8 +218,7 @@ a {
 .profoilos .card {
   border: 1px solid black;
   background-color: inherit;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  margin: 40px auto;
   overflow: hidden;
   cursor: pointer;
 }
@@ -340,7 +340,7 @@ a {
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 390px) {
   .rwd-icon {
     display: flex;
   }
@@ -395,11 +395,11 @@ a {
   }
   .h2-large {
     font-size: 32px;
-    text-align: left;
+    text-align: center;
   }
   .p-large {
     font-size: 24px;
-    text-align: left;
+    text-align: center;
   }
   .btns {
     font-size: 24px;
@@ -407,11 +407,7 @@ a {
   .index-text {
     width: 100%;
     padding: 50px;
-  }
-  .index-text .btns {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .index-text .btns a {
     font-size: 32px;
@@ -420,13 +416,18 @@ a {
     letter-spacing: normal;
   }
   .index-img {
-    width: 100%;
+    display: none;
   }
   .about-img {
-    width: 100%;
+    width: 50%;
   }
-  .about-text {
-    width: 100%;
+  .about-text ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .about-text ul img {
+    width: 50%;
   }
   .frontend {
     display: flex;
