@@ -78,69 +78,65 @@
 }
 // 首頁
 .index{
-    @include padding;
+    color: #fff;
+    background: #000;
     background-image: url(../img/backgroundimg.jpg);
     background-size: cover;
+    position: relative;
+    z-index: 1;
 
-    .index-content{
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.438);
+        z-index: 1;
+    }
+
+    .index-content {
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        // justify-content: space-between;
         min-height: 100vh;
-        .index-text{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            >div{
-                width: 50%;
-            }
-        }
-        .content-wrap{
+        position: relative;
+        z-index: 2;
+
+
+        .content-wrap {
+            background: rgba(14, 50, 80, 0.9);
             display: flex;
             width: 100%;
-            background-color: rgba(80, 88, 155, 0.651);
-            border-radius: 20px;
-            justify-content: space-between;
-            // >div{
-            //     width: 50%;
-            //     padding: 20px;
-            // }
+
+            >div {
+                // background: rgba(14, 50, 80, 0.9);
+                // flex: 1;
+                width: 50%;
+                padding: 20px;
+                position: relative;
+
+
+                &:first-child::before {
+                    content: '';
+                    border-right: 3px dashed #fff;
+                    position: absolute;
+                    right: 0px;
+                    top: 20px;
+                    height: calc(100% - 40px);
+                }
+            }
         }
     }
-    .index-img{
-        img{
-            width: 80%;
-        }
-    }
-    
-    .index-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+
+    .index-text {
+        font-size: 14px;
+        line-height: 30px;
         text-align: justify;
-        color: $color_white;
-        .btns{
-            text-align: center;
-        }
-        a{  
-            cursor: pointer;
-            transition: 0.5s;
-            margin-left: 0;
-            background-color: $color_blue;
-            color:$color_white;
-            margin-right: 40px;
-            &:last-child{
-                margin-right: 0;
-            }
-            &:hover{
-                transform: scale(1.2);
-                background-color: $color_dark_blue;
-                color: $color_white;
-            }
-        }
     }
-    
 }
+
 // 關於
 .about{
     @include padding;
